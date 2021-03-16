@@ -13,6 +13,7 @@ import java.util.Map;
 
 public class AccountUtility implements AccountConstants {
   File file = new File("accounts.txt");
+  File result = new File("accounts_result.txt");
   
   HashMap<String, CheckingAccount> map = new HashMap<>();
   
@@ -61,7 +62,7 @@ public class AccountUtility implements AccountConstants {
   public void writeToFile() {
     try {
       ArrayList<String> holder = new ArrayList<>();
-      BufferedReader in = new BufferedReader(new FileReader(this.file));
+      BufferedReader in = new BufferedReader(new FileReader(this.result));
       CheckingAccount temp = new CheckingAccount();
       for (Map.Entry<String, CheckingAccount> test : this.map.entrySet()) {
         temp = (CheckingAccount)test.getValue();
@@ -73,7 +74,7 @@ public class AccountUtility implements AccountConstants {
         String newLine = String.join("<>", (CharSequence[])arr);
         holder.add(newLine);
       } 
-      PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(this.file)));
+      PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(this.result)));
       for (String s : holder)
         out.println(s); 
       in.close();

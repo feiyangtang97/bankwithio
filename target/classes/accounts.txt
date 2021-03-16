@@ -1,6 +1,6 @@
-1005<>1898/12/31<>Albus Dumbledore<>100799.0
-1004<>1944/11/28<>Draco Malfoy<>55000.0
-1003<>1920/07/15<>Sirius Black<>12600.0
-1002<>1953/04/15<>Hermione Granger<>1500.0
-1001<>1948/10/25<>Ron Weasley<>500.0
-1000<>1950/01/01<>Harry Potter<>9197.0
+1000<>1950/01/01<>Harry Potter<>9999
+1001<>1948/10/25<>Ron Weasley<>500
+1002<>1953/04/15<>Hermione Granger<>1500
+1003<>1920/07/15<>Sirius Black<>12500
+1004<>1944/11/28<>Draco Malfoy<>55000
+1005<>1898/12/31<>Albus Dumbledore<>99999
